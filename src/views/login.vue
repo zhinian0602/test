@@ -68,7 +68,7 @@ const handleLogin = async () => {
   await formRef.value.validate((valid) => {
     if (valid) {
       userStore.login(loginForm.username);
-      ElMessage.success(`欢迎 ${loginForm.username}！}`);
+      ElMessage.success(`欢迎 ${loginForm.username}！`);
       router.push("/home");
     }
   });
